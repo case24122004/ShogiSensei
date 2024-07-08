@@ -10,7 +10,7 @@ struct piece{
     bool canPromote = false;
     bool inCheck = false;
     piece(int x = 0, int y = 0, int id = 0) : posX(x), posY(y), playerID(id) {};
-    std :: vector <std :: string> moves;
+    std::vector<std::pair<int , int >> moves;
     virtual void promotePiece();
     virtual void forcePromotion();
     virtual void checkPromotionZone(){

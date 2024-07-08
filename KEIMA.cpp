@@ -4,7 +4,9 @@ KEIMA :: KEIMA(int x, int y, int id) : piece(x, y, id) {
         type = "KEIMA";
 
         moves = {
-        "forDiagL", "forDiagR"
+
+                {2, 1}, {2, -1}
+
         };
 }
 
@@ -12,8 +14,10 @@ void KEIMA :: promotePiece(){
         type = "NARIKEI";
         
         moves = {
-        "forward", "diagRight", "diagLeft", "left", "right", 
-        "back"
+
+        {1, 0}, {1, 1}, {1, -1}, {0, -1}, {0, 1}, 
+        {-1, 0}
+        
         };
 }
 

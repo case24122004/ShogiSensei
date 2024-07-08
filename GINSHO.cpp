@@ -4,8 +4,8 @@ GINSHO :: GINSHO(int x, int y, int id) : piece(x, y, id) {
         type = "GINSHO";
 
         moves = {
-        "forward", "diagRight", "diagLeft", 
-        "diagBackRight", "diagBackLeft", 
+        {1, 0}, {1, 1}, {1, -1}, 
+        {-1, 1}, {-1, -1}, 
         
     };
 }
@@ -15,7 +15,7 @@ void GINSHO :: promotePiece(){
     type = "NARIGIN";
 
     moves = {
-        "forward", "diagRight", "diagLeft", "left", "right", 
-        "back"
+        {1, 0}, {1, 1}, {1, -1}, {0, -1}, {0, 1},
+        {-1, 0}
     };
 }

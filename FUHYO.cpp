@@ -4,7 +4,7 @@ FUHYO :: FUHYO(int x, int y, int id) : piece(x, y, id) {
         type = "FUHYO";
         
         moves = {
-        "forward"
+        {1, 0}
         };
 }
 
@@ -13,8 +13,8 @@ void FUHYO :: promotePiece(){
 
 
         moves = {
-        "forward", "diagRight", "diagLeft", "left", "right", 
-        "back"
+        {1, 0}, {1, 1}, {1, -1}, {0, -1}, {0, 1}, 
+        {-1, 0}
         };
 }
  

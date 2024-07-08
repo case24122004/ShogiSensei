@@ -4,7 +4,7 @@ KYOSHA :: KYOSHA(int x, int y, int id) : piece(x, y, id) {
         type = "KYOSHA";
 
         moves = {
-        "forward"
+        
         };
 }
 
@@ -12,8 +12,8 @@ void KYOSHA :: promotePiece(){
         type = "NARIKYO";
 
         moves = {
-        "forward", "diagRight", "diagLeft", "left", "right", 
-        "back"
+        {1, 0}, {1, 1}, {1, -1}, {0, -1}, {0, 1}, 
+        {-1, 1}
         };
         
 }

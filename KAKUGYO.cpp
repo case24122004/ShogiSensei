@@ -4,7 +4,9 @@ KAKUGYO :: KAKUGYO(int x, int y, int id) : piece(x, y, id) {
         type = "KAKUGYO";
 
         moves = {
-        "diagRight", "diagLeft", "diagBackRight", "diagBackLeft"
+                
+                {1, 1}, {1, -1}, {-1, 1}, {-1, -1}
+
         };
 }
 
@@ -12,7 +14,7 @@ void KAKUGYO :: promotePiece(){
         type = "RYUMA";
 
         moves = {
-                "diagRight", "diagLeft", "diagBackRight", "diagBackLeft", 
-                "right", "left", "back", "forward"
+                {1, 1}, {1, -1}, {-1, 1}, {-1, -1}, 
+                {0, 1}, {0, -1}, {-1, 0}, {1, 0}
         };
 }

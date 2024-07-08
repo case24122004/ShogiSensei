@@ -4,7 +4,7 @@
 struct nineBoard{
 NONE space;
 Player_1 p1;
-Player_1 p2;
+Player_2 p2;
 
 piece nineBoard[9][9] = {
 
@@ -22,7 +22,7 @@ piece nineBoard[9][9] = {
 
 void movePiece(int posx, int posy, piece p); //move piece
 void checkMate(); //determing if checkmate
-void check(); //determine if in check
+void inCheck(); //determine if in check
 bool validMove(int posx, int posy, piece p); //determine if move is valid, edge cases, own pieces, taking other pieces
 bool wantToTake();
 void takePiece(piece p);

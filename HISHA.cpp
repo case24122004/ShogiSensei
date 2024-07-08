@@ -4,7 +4,9 @@ HISHA :: HISHA(int x, int y, int id) : piece(x, y, id){
         type = "HISHA";
 
         moves = {
-        "forward", "right", "left", "back"
+
+                {1, 0}, {0, 1}, {0, -1}, {-1, 0}
+
         };
 }
 
@@ -13,8 +15,8 @@ void HISHA :: promotePiece(){
         type = "RYUO";
 
         moves = {
-        "forward", "right", "left", "back", 
-        "diagForwardRight", "diagForwardLeft", "diagBackRight",
-        "diagBackLeft"
+        {1, 0}, {0, 1}, {0, -1}, {-1, 0}, 
+        {1, 1}, {1, -1}, {-1, 1},
+        {-1, -1}
         };
 }
