@@ -1,11 +1,11 @@
 #include "Pieces.cpp"
 
+bool KYOSHA::isPlayerOne() {
+    return (this->playerID == 1);
+}
+
 KYOSHA :: KYOSHA(int x, int y, int id) : piece(x, y, id) {
         type = "KYOSHA";
-
-        moves = {
-        
-        };
 }
 
 void KYOSHA :: promotePiece(){
@@ -21,3 +21,4 @@ void KYOSHA :: promotePiece(){
 void KYOSHA :: forcePromotion(){
         this->promotePiece();
 }
+

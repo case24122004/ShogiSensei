@@ -6,7 +6,7 @@
 struct piece{
 
     std :: string type;
-    int posX, posY, playerID;
+    int posX, posY, playerID, direction;
     bool canPromote = false;
     bool inCheck = false;
     piece(int x = 0, int y = 0, int id = 0) : posX(x), posY(y), playerID(id) {};
@@ -86,9 +86,6 @@ struct FUHYO : public piece{
     void forcePromotion() override;
 };
 
-struct NONE : public piece{
-
-};
 
 
 
